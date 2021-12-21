@@ -3,7 +3,21 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+import { ensureIsUser, getCurrentUser, useCurrentUser, User } from 'ihp-backend';
+import { initIHPBackend } from 'ihp-datasync/ihp-datasync';
+import { useQuery } from 'ihp-datasync/ihp-datasync-react';
+import { query } from 'ihp-datasync/ihp-querybuilder';
+import { useEffect, useState } from 'react';
+
+
+initIHPBackend({ host: 'https://qjdtmcomwbfoofsvrcqpajmfcgmwfxzd.di1337.com' })
+
 const Home: NextPage = () => {
+
+  useEffect(() => {
+      ensureIsUser(); // Trigger login
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
