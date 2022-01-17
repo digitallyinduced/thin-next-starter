@@ -1,13 +1,13 @@
-import { ensureIsUser, getCurrentUser, useCurrentUser, User } from 'ihp-backend';
-import { initIHPBackend } from 'ihp-datasync/ihp-datasync';
-import { useQuery } from 'ihp-datasync/ihp-datasync-react';
-import { Post, query } from 'ihp-datasync/ihp-querybuilder';
+import { AuthUser, ensureIsUser, getCurrentUser, useCurrentUser } from 'ihp-backend';
+import { initIHPBackend } from 'ihp-datasync';
+import { useQuery } from 'ihp-datasync/react';
+import { Post, query } from 'ihp-datasync';
 import { useEffect, useState } from 'react';
 
-initIHPBackend({ host: 'https://qjdtmcomwbfoofsvrcqpajmfcgmwfxzd.di1337.com' })
+initIHPBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
 
 function Blog({}) {
-    const [isLoggedIn, setLoggedIn] = useState<User | null>(null);
+    const [isLoggedIn, setLoggedIn] = useState<AuthUser | null>(null);
 
     useEffect(() => {
         ensureIsUser().then(() => {

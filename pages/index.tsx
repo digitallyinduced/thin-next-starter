@@ -3,14 +3,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import { ensureIsUser, getCurrentUser, useCurrentUser, User } from 'ihp-backend';
-import { initIHPBackend } from 'ihp-datasync/ihp-datasync';
-import { useQuery } from 'ihp-datasync/ihp-datasync-react';
-import { query } from 'ihp-datasync/ihp-querybuilder';
+import { ensureIsUser, getCurrentUser, useCurrentUser, AuthUser } from 'ihp-backend';
+import { initIHPBackend, query } from 'ihp-datasync';
+import { useQuery } from 'ihp-datasync/react';
 import { useEffect, useState } from 'react';
 
-
-initIHPBackend({ host: 'https://qjdtmcomwbfoofsvrcqpajmfcgmwfxzd.di1337.com' })
+initIHPBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
 
 const Home: NextPage = () => {
 
