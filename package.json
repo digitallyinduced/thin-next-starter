@@ -9,9 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/ihp-backend": "https://ihpbackend.digitallyinduced.com/ShowTypescriptDeclarationFile?typescriptDeclarationFileId=19f95b8a-fdc0-415f-93b2-e273ac5f9061&accessToken=ARsjOHIzkczlBWrQYNXNLvzKEIeGRMFh",
-    "ihp-backend": "https://ihpbackend.digitallyinduced.com/ihp-backend.tar.gz?nhgfz654edfgdf",
-    "ihp-datasync": "https://gitpkg.now.sh/digitallyinduced/ihp/lib/IHP/DataSync?1f2b0fb67b055f17cf3f5a4a4a159917bc106e28",
+    "@types/ihp-backend": "https://ihpbackend.digitallyinduced.com/ShowTypescriptDeclarationFile?typescriptDeclarationFileId=163cfd0c-565b-4945-a2cb-4272a0392ca9&accessToken=yksonfhDPOOexhUgrdUUQQDKYUWnExzo",
+    "ihp-backend": "*",
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2"

@@ -1,7 +1,5 @@
-import { AuthUser, ensureIsUser, getCurrentUser, useCurrentUser } from 'ihp-backend';
-import { initIHPBackend } from 'ihp-datasync';
-import { useQuery } from 'ihp-datasync/react';
-import { query } from 'ihp-datasync';
+import { query ,AuthUser, ensureIsUser, getCurrentUser, initIHPBackend } from 'ihp-backend';
+import { useQuery, useCurrentUser } from 'ihp-backend/react';
 import { useEffect, useState } from 'react';
 
 initIHPBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
