@@ -5,17 +5,10 @@ import { useEffect, useState } from 'react';
 initIHPBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
 
 function Blog({}) {
-    const [isLoggedIn, setLoggedIn] = useState<AuthUser | null>(null);
-
-    useEffect(() => {
-        ensureIsUser().then(() => {
-            const user = getCurrentUser();
-            setLoggedIn(user);
-        });
-    }, []);
+    const user = useCurrentUser();
 
     return <div>
-        <div>Hello {isLoggedIn?.email}</div>
+        <div>Hello {user?.email}</div>
     </div>
 }
 
