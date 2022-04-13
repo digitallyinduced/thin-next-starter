@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/ihp-backend": "https://ihpbackend.digitallyinduced.com/ShowTypescriptDeclarationFile?typescriptDeclarationFileId=163cfd0c-565b-4945-a2cb-4272a0392ca9&accessToken=yksonfhDPOOexhUgrdUUQQDKYUWnExzo",
+    "@types/ihp-backend": "https://thinbackend.app/ShowTypescriptDeclarationFile?typescriptDeclarationFileId=0827ca85-fb10-404e-bce7-977a86988bf8&accessToken=BhmpbEoCyYRMcceMoPIlURkyIamkjBCH",
     "ihp-backend": "*",
     "next": "12.0.7",
     "react": "17.0.2",
