@@ -1,8 +1,8 @@
-import { query ,AuthUser, ensureIsUser, getCurrentUser, initIHPBackend } from 'ihp-backend';
-import { useQuery, useCurrentUser } from 'ihp-backend/react';
+import { query , ensureIsUser, getCurrentUser, initThinBackend } from 'thin-backend';
+import { useQuery, useCurrentUser } from 'thin-backend/react';
 import { useEffect, useState } from 'react';
 
-initIHPBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
+initThinBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
 
 function Blog({}) {
     const user = useCurrentUser();

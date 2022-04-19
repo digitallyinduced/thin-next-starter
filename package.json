@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/ihp-backend": "https://thinbackend.app/ShowTypescriptDeclarationFile?typescriptDeclarationFileId=0827ca85-fb10-404e-bce7-977a86988bf8&accessToken=BhmpbEoCyYRMcceMoPIlURkyIamkjBCH",
-    "ihp-backend": "*",
+    "@types/thin-backend": "https://thin.dev/ShowTypescriptDeclarationFile?typescriptDeclarationFileId=5f2f0cc9-062c-475b-b861-35a161d1c376&accessToken=jEVlajclRbASnSUtCuZGazHysCaYtHvM",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "thin-backend": "*"
   },
   "devDependencies": {
     "@types/react": "17.0.37",

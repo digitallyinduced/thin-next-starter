@@ -3,11 +3,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import { query, initIHPBackend, ensureIsUser, getCurrentUser, AuthUser } from 'ihp-backend';
-import { useQuery, useCurrentUser } from 'ihp-backend/react';
+import { query, initThinBackend, ensureIsUser, getCurrentUser } from 'thin-backend';
+import { useQuery, useCurrentUser } from 'thin-backend/react';
 import { useEffect, useState } from 'react';
 
-initIHPBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
+initThinBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
 
 const Home: NextPage = () => {
 

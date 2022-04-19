@@ -1,11 +1,11 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { initIHPBackend } from 'ihp-backend';
-import { IHPBackend } from 'ihp-backend/react';
+import { initThinBackend } from 'thin-backend';
+import { ThinBackend } from 'thin-backend/react';
 
-initIHPBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
+initThinBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <IHPBackend requireLogin><Component {...pageProps} /></IHPBackend>
+  return <ThinBackend requireLogin><Component {...pageProps} /></ThinBackend>
 }
 export default MyApp
