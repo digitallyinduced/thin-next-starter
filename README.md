@@ -2,6 +2,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Create a new project:
+
+```bash
+npx degit digitallyinduced/thin-next-starter myproject
+```
+
 First, run the development server:
 
 ```bash
