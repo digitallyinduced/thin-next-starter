@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/thin-backend": "https://thin.dev/ShowTypescriptDeclarationFile?typescriptDeclarationFileId=5f2f0cc9-062c-475b-b861-35a161d1c376&accessToken=jEVlajclRbASnSUtCuZGazHysCaYtHvM",
+    "@types/thin-backend": "https://thin.dev/ShowTypescriptDeclarationFile?typescriptDeclarationFileId=895d99dd-c461-4282-8e4e-07629b30abd4&accessToken=VJkchAyOAwVpWxMQCWUSdKRfaPZpaXRl",
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
