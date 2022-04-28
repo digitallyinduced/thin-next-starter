@@ -10,11 +10,6 @@ import { useEffect, useState } from 'react';
 initThinBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
 
 const Home: NextPage = () => {
-
-  useEffect(() => {
-      ensureIsUser(); // Trigger login
-  }, []);
-
   return (
     <div className={styles.container}>
       <Head>
