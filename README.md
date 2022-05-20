@@ -8,7 +8,14 @@ Create a new project:
 npx degit digitallyinduced/thin-next-starter myproject
 ```
 
-First, run the development server:
+[Then open `.env` and add your thin `BACKEND_URL`:](https://thin.dev/docs/troubleshooting#BACKEND_URL)
+
+```
+NEXT_PUBLIC_BACKEND_URL=# GET THIS VALUE ON https://thin.dev/docs/troubleshooting#BACKEND_URL
+```
+
+
+Run the development server:
 
 ```bash
 npm run dev
