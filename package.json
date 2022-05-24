@@ -13,7 +13,8 @@
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "thin-backend": "*"
+    "thin-backend": ">= 0.9.0",
+    "thin-backend-react": ">= 0.9.0"
   },
   "devDependencies": {
     "@types/react": "17.0.37",
